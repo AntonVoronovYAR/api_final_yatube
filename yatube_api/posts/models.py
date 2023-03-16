@@ -18,7 +18,7 @@ class Post(models.Model):
     pub_date = models.DateTimeField('Дата публикации', auto_now_add=True)
     author = models.ForeignKey(User,
                                on_delete=models.CASCADE,
-                               related_name='posts')
+                               related_name='post')
     group = models.ForeignKey(Group,
                               blank=True, null=True,
                               on_delete=models.CASCADE)
