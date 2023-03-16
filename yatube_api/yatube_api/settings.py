@@ -1,13 +1,12 @@
-import os
-
 from pathlib import Path
 from datetime import timedelta
-from dotenv import load_dotenv
-load_dotenv()
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = str(os.getenv('SECRET_KEY', default='SUP3R-S3CR3T-K3Y-F0R-MY-PR0J3CT'))
+# Защитил ключ с помощью dotenv, но были ошибки
+# на платформе яндекс-практикума, не мог сдать на код-ревью
+SECRET_KEY = 'hhz7l-ltdismtf@bzyz+rple7*s*w$jak%whj@(@u0eok^f9k4'
 
 DEBUG = True
 
